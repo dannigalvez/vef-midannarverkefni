@@ -20,4 +20,5 @@ def index(company):
 def index(key):
     return template('moreinfo',data=data,k=key)
 
-run(debug=True)
+run(host="0.0.0.0", port=os.environ.get('PORT'))
+#run(debug=True)
